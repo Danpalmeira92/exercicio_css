@@ -49,8 +49,8 @@ header li a:hover {
     /* height: 180px; */
     width: 100%;
 
-
 }
+
 .articles article {
     width: 30%;
 }
@@ -107,4 +107,12 @@ section h2 {
 
 #economy .articles article a {
     background-color: #ff9f1a;
+}
+
+#entertainment {
+    background-color:rgba(248, 255, 205, 0.703);
+}
+
+#entertainment .articles article a {
+    background-color: rgb(43, 124, 211);
 }
