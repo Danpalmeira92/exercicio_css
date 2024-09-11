@@ -6,41 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entretenimento</title>
     <style>
-
         body {
-            background-color: rgba(232, 187, 233, 0.753);
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
         }
+
+        /* Imagem de fundo */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://nosbastidores.com.br/wp-content/uploads/2024/09/beetlejuice.jpg');
+            background-size: 118%;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -2; /* Fica atrás da overlay e do conteúdo */
+        }
+
+        /* Overlay para transparência */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Ajuste o último valor (0.5) para mais ou menos transparência */
+            z-index: -1; /* Fica acima da imagem de fundo */
+        }
+
         .texto-maior {
             font-size: 25px;
         }
+
         .imagem-reduzida {
-            width: 800px;
+            width: 700px;
             height: auto;
             float: left;
             margin-right: 15px;
             margin-bottom: 15px;
         }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Fica acima da overlay */
+            color: white;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
-    <section id="entertainment">
-        <div class="container">
-            <h2 style= text-align:center  >Entretenimento</h2>
-            <div class="articles">
-                <article>
-                    <h1 class="texto-maior">Os Fantasmas Ainda se Divertem: Beetlejuice – <br> O Retorno do Poltergeist Mais Adorado do Cinema!</h1>
-                    <img src="https://ofuxico.com.br/wp-content/uploads/2024/07/personagens-cartaz-os-fantasmas-ainda-se-divertem-beetlejuice-beetlejuice.jpg" alt="Elenco principal de Os Fantasmas Ainda se Divertem" class="imagem-reduzida"/>
-                    <header>
-                        
-                        <p class="texto-maior">
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="content">
+        <h2 style="text-align:center; color:white;">Entretenimento</h2>
+            <article>
+                <h1 class="texto-maior" style="color: white;">Os Fantasmas Ainda se Divertem: Beetlejuice – <br> O Retorno do Poltergeist Mais Adorado do Cinema!</h1>
+                <img src="https://ofuxico.com.br/wp-content/uploads/2024/07/personagens-cartaz-os-fantasmas-ainda-se-divertem-beetlejuice-beetlejuice.jpg" alt="Elenco principal de Os Fantasmas Ainda se Divertem" class="imagem-reduzida"/>
+                <header>
+                    <p class="texto-maior">
                         A tão aguardada sequência de "Os Fantasmas se Divertem" traz de volta Beetlejuice, o poltergeist mais irreverente do cinema. Tim Burton retorna como produtor, mantendo o tom excêntrico e visual gótico que tornaram o filme original um clássico cult.
 
-                                Nesta nova trama, acompanhamos a família Deetz, agora com três gerações que se reúnem em meio a uma tragédia familiar, apenas para descobrir que o mundo dos vivos e dos mortos continua em colapso total quando Beetlejuice reaparece. O filme combina comédia, elementos sobrenaturais e o estilo visual único de Burton, garantindo risadas e momentos de pura nostalgia. É uma viagem maluca que promete agradar tanto os fãs antigos quanto os novos espectadores.
-                                
-                                Com uma mistura perfeita de humor ácido e situações absurdas, "Os Fantasmas Ainda se Divertem: Beetlejuice" prova que algumas assombrações nunca perdem seu encanto.
-                        </p>
-                        <time>10/09/2024 às 19:14</time>
-                    </header>
-                </article>    
+                        Nesta nova trama, acompanhamos a família Deetz, agora com três gerações que se reúnem em meio a uma tragédia familiar, apenas para descobrir que o mundo dos vivos e dos mortos continua em colapso total quando Beetlejuice reaparece. O filme combina comédia, elementos sobrenaturais e o estilo visual único de Burton, garantindo risadas e momentos de pura nostalgia. É uma viagem maluca que promete agradar tanto os fãs antigos quanto os novos espectadores.
+
+                        Com uma mistura perfeita de humor ácido e situações absurdas, "Os Fantasmas Ainda se Divertem: Beetlejuice" prova que algumas assombrações nunca perdem seu encanto.
+                    </p>
+                    <time>10/09/2024 às 19:14</time>
+                    <a style="color: white; position: fixed; right: 20px;" href="./index.html" title="Volte ao portal de notícias">Voltar ao portal</a>
+                    
+                </header>
+            </article>
+    </div>
 </body>
 </html>
