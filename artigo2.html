@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entretenimento</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Imagem de fundo */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://cinebuzz.com.br/media/uploads/2024/09/hellboy-e-o-homem-torto-estreia-nos-cinemas-brasileiros.jpg);
+            background-size: 118%;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -2; /* Fica atrás da overlay e do conteúdo */
+        }
+
+        /* Overlay para transparência */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Ajuste o último valor (0.5) para mais ou menos transparência */
+            z-index: -1; /* Fica acima da imagem de fundo */
+        }
+
+        .texto-maior {
+            font-size: 23px;
+        }
+
+        .imagem-reduzida {
+            width: 700px;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Fica acima da overlay */
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="content">
+        <h2 style="text-align:center; color:white;">Entretenimento</h2>
+            <article>
+                <h1 class="texto-maior" style="color: white;">Hellboy e o Homem Torto – Uma Jornada Sombria pelos Anos 50</h1>
+                <img src="https://alemdatocadocoelho.wordpress.com/wp-content/uploads/2024/09/hellboy-e-o-homem-torto-capa.jpg?w=1200" alt="hellboy-e-o-homem-torto-capa" class="imagem-reduzida"/>
+                <header>
+                    <p class="texto-maior">
+                        Hellboy e o Homem Torto" leva o icônico personagem criado por Mike Mignola de volta às telas em um capítulo inédito e sombrio. Ambientado nos anos 50, o filme explora uma das missões mais sinistras de Hellboy, quando ele se junta a um agente novato do Bureau de Pesquisas e Defesa Paranormal (B.P.D.P.) para investigar estranhos acontecimentos nas montanhas dos Apalaches.
+
+O filme se destaca por seu tom mais sombrio e por explorar o folclore e o terror gótico, trazendo à vida uma história cheia de mistério e criaturas grotescas que desafiam o herói. Os cenários e a atmosfera são meticulosamente construídos para criar uma experiência visual intensa, repleta de ação e sustos.
+
+Para os fãs do universo Hellboy, este é um capítulo que mergulha fundo nas raízes sombrias do personagem, com uma trama envolvente que promete surpreender sem abandonar o estilo único que o tornou famoso.
+                    </p>
+                    <time>11/09/2024 às 18:34</time>
+                    <a style="color: white; position: fixed; right: 20px;" href="./index.html" title="Volte ao portal de notícias">Voltar ao portal</a>
+                    
+                </header>
+            </article>
+    </div>
+</body>
+</html>
