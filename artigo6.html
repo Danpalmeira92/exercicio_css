@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entretenimento</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Imagem de fundo */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://i0.wp.com/ihelpbr.com/wp-content/uploads/2024/08/evento-apple-iphone-16-setembro-2024.jpg?resize=1140%2C694&ssl=1);
+            background-size: 118%;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -2; /* Fica atrás da overlay e do conteúdo */
+        }
+
+        /* Overlay para transparência */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Ajuste o último valor (0.5) para mais ou menos transparência */
+            z-index: -1; /* Fica acima da imagem de fundo */
+        }
+
+        .texto-maior {
+            font-size: 15px;
+        }
+
+        .imagem-reduzida {
+            width: 700px;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Fica acima da overlay */
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="content">
+        <h2 style="text-align:center; color:white;">Entretenimento</h2>
+            <article>
+                <h1 class="texto-maior" style="color: white;">Atlas Technology – A Nova Fronteira da Inovação Digital</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnX_QFCvoK0Y0kI1r-l2FHw2LvWoMarVNcsA&s" alt="Atlas technology" class="imagem-reduzida"/>
+                <header>
+                    <p class="texto-maior">
+                        Atlas Technology é um nome que vem ganhando destaque no cenário global de tecnologia. Com um portfólio diversificado que inclui inteligência artificial, blockchain e soluções de cloud computing, a empresa está ajudando a redefinir a forma como negócios operam na era digital.
+
+                        Uma das suas maiores inovações está no desenvolvimento de sistemas de IA que otimizam operações empresariais e melhoram a tomada de decisão em tempo real. Além disso, Atlas tem investido pesado na criação de infraestrutura para blockchain, facilitando transações mais seguras e eficientes para empresas em todo o mundo.
+
+                        Atlas também se destaca na pesquisa e desenvolvimento de tecnologias sustentáveis, focando em soluções que reduzam o consumo de energia e aumentem a eficiência dos sistemas. Com uma abordagem visionária e focada em resultados, Atlas Technology está se posicionando como um pilar essencial para o futuro da transformação digital, ajudando empresas a navegar pelos desafios do século 21 com mais confiança e inovação.
+                    </p>
+                    <time>10/09/2024 às 19:14</time>
+                    <a style="color: white; position: fixed; right: 20px;" href="./index.html#technology" title="Volte ao portal de notícias">Voltar ao portal</a>
+                    
+                </header>
+            </article>
+    </div>
+</body>
+</html>
