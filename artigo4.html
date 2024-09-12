@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entretenimento</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Imagem de fundo */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D);
+            background-size: 118%;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -2; /* Fica atrás da overlay e do conteúdo */
+        }
+
+        /* Overlay para transparência */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Ajuste o último valor (0.5) para mais ou menos transparência */
+            z-index: -1; /* Fica acima da imagem de fundo */
+        }
+
+        .texto-maior {
+            font-size: 23px;
+        }
+
+        .imagem-reduzida {
+            width: 700px;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Fica acima da overlay */
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="content">
+        <h2 style="text-align:center; color:white;">Entretenimento</h2>
+            <article>
+                <h1 class="texto-maior" style="color: white;">ChatGPT – A Revolução da Inteligência Artificial no Cotidiano</h1>
+                <img src="https://images.unsplash.com/photo-1678483789102-506fdcbe21f7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGdwdHxlbnwwfHwwfHx8MA%3D%3D" alt="Chay GPT logo" class="imagem-reduzida"/>
+                <header>
+                    <p class="texto-maior">
+                        Desde o seu lançamento, o ChatGPT tem se destacado como uma das inteligências artificiais mais poderosas e acessíveis do mercado. Baseado no modelo GPT-4 da OpenAI, ele é capaz de entender e gerar texto de maneira extremamente natural, permitindo conversas com um nível de sofisticação que se aproxima do humano.
+
+                        Empresas têm adotado o ChatGPT para melhorar o atendimento ao cliente, automatizar processos e criar conteúdos personalizados. Além disso, ele se tornou uma ferramenta popular entre programadores, ajudando na depuração de código e na criação de soluções de software.
+
+                        Na educação, o ChatGPT está se consolidando como um recurso valioso para estudantes e professores, auxiliando na resolução de problemas, geração de ideias e até na prática de novos idiomas. Com a evolução constante, o ChatGPT está moldando o futuro da interação humano-computador, oferecendo possibilidades quase infinitas para o dia a dia e o mercado profissional.
+                    </p>
+                    <time>10/09/2024 às 19:14</time>
+                    <a style="color: white; position: fixed; right: 20px;" href="./index.html#technology" title="Volte ao portal de notícias">Voltar ao portal</a>
+                    
+                </header>
+            </article>
+    </div>
+</body>
+</html>
